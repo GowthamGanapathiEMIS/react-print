@@ -1,0 +1,159 @@
+.print-button {
+  padding: 15px 0px;
+}
+
+.printScreen-none {
+  display: none;
+}
+.printScreen-block {
+  display: block;
+}
+/* @media screen {
+    div.divFooter{
+      display: none;
+    }
+  }
+  @media screen {
+    div.divHeader{
+      display: none;
+    }
+  } */
+@media print {
+  div.divFooter {
+    position: fixed;
+    /* height: 5vh; */
+    bottom: 5px;
+    width: 98%;
+    text-align: center;
+  }
+}
+@media print {
+  div.divHeader {
+    position: fixed;
+    height: 5vh;
+    top: 2px;
+    width: 98%;
+  }
+}
+@media print {
+  div.divContent {
+    margin-top: 85px;
+  }
+}
+.table-header {
+  /* padding-top: 12px;
+  padding-bottom: 12px; */
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+tr {
+  height: 5vh;
+}
+@media all {
+  .page-break {
+    display: none;
+  }
+}
+
+@media print {
+  .page-break {
+    display: block;
+    page-break-after: always;
+  }
+}
+.header,
+.footer {
+  border: 1px solid black;
+  margin: 2px;
+  padding: 0px;
+}
+.mainWrapper {
+  /* position: relative;
+  left: 80px;
+  top: 2px; */
+  /* margin: auto;
+  width: 40%;
+  padding: 10px;
+  border: 3px solid green;
+  text-align: center; */
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  width: 40%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  /* align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; */
+  position: relative;
+  color: #fff;
+  background-color: #1a8099;
+  font-weight: 400;
+  font-size: 12px;
+  text-shadow: none;
+  text-transform: uppercase;
+  background-image: none;
+  border: 0;
+  border-radius: 65px;
+  box-shadow: none;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 5px;
+}
+input[type="submit"] {
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  padding: 6px 10px;
+  margin: 4px 0;
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btnContainer {
+  text-align: center;
+}
